@@ -5,7 +5,7 @@ Version:	1.5
 Release:	0.1
 License:	GPL
 Group:		Networking
-Source0:	http://snaj.ath.cx/%{name}/tc-viewer
+Source0:	http://snaj.ath.cx/tc-viewer/tc-viewer
 # Source0-md5:	e56f6a686e110aba273a94b62dd6f36d
 Source1:	http://snaj.ath.cx/tc-viewer/%{name}.conf
 # Source1-md5:	8c57ec7df34b953ade2202b0a092496e
@@ -26,15 +26,15 @@ klas na określonym inferfejsie.
 
 %prep
 %setup -qcT
-cp %{SOURCE1} tc-viewer.conf.example
-cp %{SOURCE2} Changelog
 
-%build
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
 
 install %{SOURCE0} $RPM_BUILD_ROOT%{_bindir}
+install %{SOURCE1} tc-viewer.conf.example
+install %{SOURCE2} Changelog
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT

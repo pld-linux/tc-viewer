@@ -33,9 +33,8 @@ cp %{SOURCE2} Changelog
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
-install -d $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 
-cp %{SOURCE0} $RPM_BUILD_ROOT%{_bindir}
+install %{SOURCE0} $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT

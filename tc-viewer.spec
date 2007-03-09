@@ -12,7 +12,7 @@ Source1:	http://snaj.ath.cx/tc-viewer/%{name}.conf
 Source2:	http://snaj.ath.cx/tc-viewer/Changelog
 # Source2-md5:	89813ba4e157c2ab287ebafdd7ab74b4
 URL:		http://snaj.ath.cx/tc-viewer/tc-viewer.html
-Requires:	perl
+Requires:	perl-base
 BuildArch:      noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

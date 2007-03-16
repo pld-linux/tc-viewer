@@ -1,5 +1,5 @@
 Summary:	Provides the ability to watch current transfers that take place in HTB and HFSC
-Summary(pl.UTF-8):	Pozwala śledzić bieżący ruch w klasach HTB, HFSC.
+Summary(pl.UTF-8):	Narzędzie do śledzenia bieżącego ruchu w klasach HTB i HFSC
 Name:		tc-viewer
 Version:	1.5
 Release:	0.1
@@ -34,7 +34,6 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE0} $RPM_BUILD_ROOT%{_bindir}
 install %{SOURCE1} tc-viewer.conf.example
 install %{SOURCE2} Changelog
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT

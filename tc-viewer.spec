@@ -2,7 +2,7 @@ Summary:	Provides the ability to watch current transfers that take place in HTB 
 Summary(pl.UTF-8):	Narzędzie do śledzenia bieżącego ruchu w klasach HTB i HFSC
 Name:		tc-viewer
 Version:	1.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking
 Source0:	http://snaj.ath.cx/tc-viewer/tc-viewer
